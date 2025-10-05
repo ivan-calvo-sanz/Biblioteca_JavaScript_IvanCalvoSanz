@@ -1,4 +1,4 @@
-// ***** TEORIA VARIABLES *****
+// ***** VARIABLES *****
 /*
     - js es Case Sensitive (sensible a mayúsculas y minúsculas)
     - js es de Tipado Dinamico, no es necesario declarar el tipo de una variable (como int, string, etc.), y su tipo puede cambiar durante la ejecución del programa

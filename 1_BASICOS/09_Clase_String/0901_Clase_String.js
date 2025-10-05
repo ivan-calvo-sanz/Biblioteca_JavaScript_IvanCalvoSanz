@@ -1,4 +1,4 @@
-// ***** TEORIA CLASE String *****
+// ***** CLASE String *****
 
 /*
     - Pueden ir entre comillas simples ' ', dobles " ", o invertidas ` ` (backticks).

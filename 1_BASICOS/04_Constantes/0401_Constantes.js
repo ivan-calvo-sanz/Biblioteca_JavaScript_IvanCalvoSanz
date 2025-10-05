@@ -1,4 +1,4 @@
-// ***** TEORIA CONSTANTES *****
+// ***** CONSTANTES *****
 
 /* const
     const NOMBRE = valor;

@@ -1,4 +1,4 @@
-// ***** TEORIA OBJETO Math *****
+// ***** OBJETO Math *****
 
 /* 
     Math no se instancia (no se puede usar new Math())

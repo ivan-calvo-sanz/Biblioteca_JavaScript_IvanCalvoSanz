@@ -1,4 +1,4 @@
-// ***** TEORIA ARRAYS *****
+// ***** ARRAYS *****
 
 /*
     - Estructura que almacena varios valores en una sola variable.

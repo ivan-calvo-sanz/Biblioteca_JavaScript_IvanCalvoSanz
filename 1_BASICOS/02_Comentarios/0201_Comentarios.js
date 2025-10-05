@@ -1,4 +1,4 @@
-// ***** TEORIA COMENTARIOS *****
+// ***** COMENTARIOS *****
 
 /*
 1. Comentario de una sola línea

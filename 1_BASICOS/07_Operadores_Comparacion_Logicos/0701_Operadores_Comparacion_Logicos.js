@@ -1,4 +1,4 @@
-// ***** TEORIA OPERADORES COMPARACION *****
+// ***** OPERADORES DE COMPARACION *****
 
 /* 
     Siempre devuelven un valor booleano
@@ -24,7 +24,7 @@
 console.log("casa" > "barco"); // true (porque "c" va después de "b")
 
 
-// ***** TEORIA OPERADORES LOGICOS *****
+// ***** OPERADORES LOGICOS *****
 /*
 | Operador | Nombre       | Ejemplo                                     | Resultado                      |
 | -------- | ------------ | ------------------------------------------- | ------------------------------ |

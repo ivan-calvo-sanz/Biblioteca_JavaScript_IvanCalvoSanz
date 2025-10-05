@@ -1,4 +1,4 @@
-// ***** TEORIA OPERADORES MATEMATICOS *****
+// ***** OPERADORES MATEMATICOS *****
 
 /* Operadores básicos
 | Operador | Descripción                   | Ejemplo  | Resultado |

@@ -1,4 +1,4 @@
-// ***** TEORIA promt *****
+// ***** promt *****
 
 /* prompt
     Devuelve el texto que el usuario introduce o null si pulsa Cancelar.
@@ -14,7 +14,7 @@ document.writeln('Edad: ' + edad);
 let a=parseInt(pompt('Ingrese el valor de a'));
 
 
-// ***** TEORIA alet *****
+// ***** alert *****
 let nombre_v2 = prompt("¿Cómo te llamas?", "Tienes que indicar un nombre verdadero");
 alert("Hola " + nombre + "!");
 

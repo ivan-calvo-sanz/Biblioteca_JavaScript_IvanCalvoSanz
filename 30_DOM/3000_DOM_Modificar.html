@@ -1,0 +1,29 @@
+<!-- ***** EJEMPLO SENCILLO DE COMO MODIFICAR EL DOM***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modificar_DOM</title>
+</head>
+
+<body>
+
+  <input id="nombre" type="text" placeholder="Escribe tu nombre">
+  <button id="boton">Saludar</button>
+  <p id="mensaje"></p>
+
+  <script>
+    const boton = document.getElementById("boton");
+
+    boton.addEventListener("click", function () {
+      const nombre = document.getElementById("nombre").value;
+      document.getElementById("mensaje").textContent = "Hola " + nombre + " 👋";
+    });
+  </script>
+
+
+</body>
+
+</html>

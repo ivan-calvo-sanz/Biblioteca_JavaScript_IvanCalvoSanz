@@ -1,0 +1,85 @@
+<!-- ***** DOM BOTONES ***** -->
+
+<!-- ***** EJEMPLO ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM BOTONES</title>
+</head>
+
+<body>
+
+  <form id="miFormulario">
+    <label>Nombre:</label>
+    <input type="text" id="nombre"> <!-- tiene un id para poder acceder a él desde JS -->
+
+    <button type="button" id="botonEnviar">Enviar</button> <!-- tiene un id para poder acceder a él desde JS -->
+  </form>
+
+  <script>
+    let inputNombre = document.getElementById("nombre");  // document.getElementById() → obtiene un elemento HTML por su ID
+    let boton_V1 = document.getElementById("botonEnviar");
+
+    boton_V1.addEventListener("click", function () { // addEventListener("click", ...) → ejecuta una acción cuando se hace clic en el botón.
+      let valor = inputNombre.value; // .value → obtiene el texto que escribió el usuario.
+      alert("Hola, " + valor + "!");
+    });
+  </script>
+
+
+
+
+  <!-- ***** TPOS DE BOTONES *****
+| Tipo   | Descripción                            | Ejemplo                               |
+| ------ | -------------------------------------- | ------------------------------------- |
+| button | Botón normal, se usa con JS            | <button type="button">Click</button>  |
+| submit | Envía el formulario al servidor        | <button type="submit">Enviar</button> |
+| reset  | Limpia todos los campos del formulario | <button type="reset">Borrar</button>  |
+-->
+
+
+  <!-- ***** EVENTOS BOTONES ***** 
+| Evento      | Cuándo ocurre                   | Ejemplo                            |
+| ----------- | ------------------------------- | ---------------------------------- |
+| click       | Al hacer clic                   | Guardar datos                      |
+| dblclick    | Doble clic                      | Ampliar imagen                     |
+| mousedown   | Al presionar el botón del ratón | Cambiar color mientras se mantiene |
+| mouseup     | Al soltar el clic               | Confirmar acción                   |
+| mouseenter  | Al pasar el ratón por encima    | Resaltar botón                     |
+| mouseleave  | Al sacar el ratón               | Quitar color                       |
+| contextmenu | Al clic derecho                 | Mostrar menú personalizado         |
+-->
+  <button id="boton_V2">Pasa el ratón o haz clic</button>
+
+  <script>
+    const boton_V2 = document.getElementById("boton_V2");
+
+    boton_V2.addEventListener("click", () => console.log("Clic!"));
+    boton_V2.addEventListener("mouseenter", () => boton_V2.style.backgroundColor = "lightgreen");
+    boton_V2.addEventListener("mouseleave", () => boton_V2.style.backgroundColor = "red");
+  </script>
+
+
+  <!-- ***** EVITAR QUE EL FORMULARIOO SE RECARGUE ***** -->
+  <!-- Cuando se usa un botón de tipo submit, por defecto recarga la página.
+Para evitarlo, se usa event.preventDefault(): ***** -->
+  <script>
+    document.getElementById("miFormulario").addEventListener("submit", function (event) {
+      event.preventDefault(); // evita recargar
+      alert("Formulario capturado por JS");
+    });
+  </script>
+
+
+  <!-- ***** CAMBIAR TEXTO DE UN BOTON ***** -->
+  <script>
+    let boton_V3 = document.getElementById("botonEnviar");
+    boton_V3.textContent = "Procesar...";
+  </script>
+
+</body>
+
+</html>

@@ -24,7 +24,7 @@
 console.log("casa" > "barco"); // true (porque "c" va después de "b")
 
 
-// ***** OPERADORES LOGICOS *****
+// OPERADORES LOGICOS
 /*
 | Operador | Nombre       | Ejemplo                                     | Resultado                      |
 | -------- | ------------ | ------------------------------------------- | ------------------------------ |

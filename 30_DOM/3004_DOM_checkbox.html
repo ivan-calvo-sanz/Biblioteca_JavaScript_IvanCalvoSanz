@@ -1,0 +1,50 @@
+<!-- ***** DOM checkbox ***** -->
+
+<!-- 
+    <select>
+    índice (selectedIndex)
+    su valor (value)
+-->
+
+
+<!-- ***** EJEMPLO <select> ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM checkbox</title>
+</head>
+
+<body>
+  <input type="checkbox" id="check1"> Acepto los términos
+  <button onclick="comprobar()">Comprobar</button>
+</body>
+
+<script>
+  function comprobar() {
+    const checkbox = document.getElementById("check1");
+
+    if (checkbox.checked) {
+      alert("Marcado");
+    } else {
+      alert("No está marcado");
+    }
+  }
+</script>
+
+
+
+
+
+<!-- ***** MARCAR O DESMARCAR ***** -->
+<script>
+  document.getElementById("check1").checked = true;   // marca
+  document.getElementById("check1").checked = false;  // desmarca
+</script>
+
+
+
+
+</html>

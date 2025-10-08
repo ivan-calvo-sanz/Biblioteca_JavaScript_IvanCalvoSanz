@@ -1,0 +1,54 @@
+<!-- ***** DOM text ***** -->
+
+<!-- 
+    <input type="text">
+    value → es la propiedad clave para leer o escribir su contenido.
+-->
+
+
+<!-- ***** EJEMPLO ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM text</title>
+</head>
+
+<body>
+  <input id="nombre" type="text" placeholder="Escribe tu nombre">
+  <button id="saludar">Saludar</button>
+  <p id="mensaje"></p>
+</body>
+
+<script>
+  // Seleccionamos los elementos del DOM
+  const input = document.getElementById("nombre");
+  const boton = document.getElementById("saludar");
+  const mensaje = document.getElementById("mensaje");
+
+  // Escuchamos el clic del botón
+  boton.addEventListener("click", function () {
+    const texto = input.value; // 🔹 Obtenemos el texto del input
+    mensaje.textContent = "Hola, " + texto + " 👋";
+  });
+</script>
+
+
+
+<!-- ***** PROPIEDADES *****
+| Propiedad / Método | Qué hace                                    |
+| ------------------ | ------------------------------------------- |
+| value              | Devuelve o cambia el texto dentro del campo |
+| placeholder        | Muestra un texto de ayuda cuando está vacío |
+| disabled           | Desactiva el campo                          |
+| readOnly           | Solo lectura                                |
+| focus()            | Coloca el cursor dentro del campo           |
+| blur()             | Quita el foco                               |
+| select()           | Selecciona el texto dentro del campo        |
+-->
+
+
+
+</html>

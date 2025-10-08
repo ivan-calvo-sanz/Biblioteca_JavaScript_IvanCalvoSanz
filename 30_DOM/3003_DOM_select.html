@@ -1,0 +1,73 @@
+<!-- ***** DOM select ***** -->
+
+<!-- 
+    <select>
+    índice (selectedIndex)
+    su valor (value)
+-->
+
+
+<!-- ***** EJEMPLO <select> ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM select</title>
+</head>
+
+<body>
+  <select id="color">
+    <option value="rojo">Rojo</option>
+    <option value="verde">Verde</option>
+    <option value="azul">Azul</option>
+  </select>
+
+  <button id="mostrar">Mostrar selección</button>
+  <p id="resultado"></p>
+</body>
+
+<script>
+  const select = document.getElementById("color");
+  const boton = document.getElementById("mostrar");
+  const resultado = document.getElementById("resultado");
+
+  boton.addEventListener("click", function () {
+    const indice = select.selectedIndex;        // Índice seleccionado (0, 1, 2…)
+    const valor = select.value;                 // Valor del <option> seleccionado
+    const texto = select.options[indice].text;  // Texto visible del <option>
+
+    resultado.textContent = `Índice: ${indice}, Valor: ${valor}, Texto: ${texto}`;
+  });
+</script>
+
+
+<!-- ***** PROPIEDADES *****
+| Propiedad / Método                 | Qué devuelve                                   | Ejemplo                  |
+| ---------------------------------- | ---------------------------------------------- | ------------------------ |
+| select.value                       | Valor (`value=""`) del `<option>` seleccionado | "rojo"                   |
+| select.selectedIndex               | Índice numérico del `<option>` seleccionado    | 0, 1, 2...               |
+| select.options                     | Colección de todos los `<option>`              | select.options[1].text   |
+| select.length                      | Número total de opciones                       | 3                        |
+| select.add() / select.remove()     | Añade o elimina opciones dinámicamente         | select.remove(1)         |
+-->
+
+
+<!-- ***** CAMBIAR OPCION SELECCIONADA ***** -->
+<script>
+  select.selectedIndex = 2; // Selecciona el tercer elemento (índice 2)
+</script>
+
+
+<!-- ***** MOSTRAR SELECCION DINAMICA ***** 
+El evento change se dispara cuando el usuario cambia la selección 
+-->
+<script>
+  select.addEventListener("change", function () {
+    console.log("Seleccionaste:", select.value);
+  });
+</script>
+
+
+</html>

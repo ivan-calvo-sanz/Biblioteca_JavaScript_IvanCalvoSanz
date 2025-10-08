@@ -9,21 +9,18 @@
 </head>
 
 <body>
-
   <input id="nombre" type="text" placeholder="Escribe tu nombre">
   <button id="boton">Saludar</button>
   <p id="mensaje"></p>
-
-  <script>
-    const boton = document.getElementById("boton");
-
-    boton.addEventListener("click", function () {
-      const nombre = document.getElementById("nombre").value;
-      document.getElementById("mensaje").textContent = "Hola " + nombre + " 👋";
-    });
-  </script>
-
-
 </body>
+
+<script>
+  const boton = document.getElementById("boton");
+
+  boton.addEventListener("click", function () {
+    const nombre = document.getElementById("nombre").value;
+    document.getElementById("mensaje").textContent = "Hola " + nombre + " 👋";
+  });
+</script>
 
 </html>

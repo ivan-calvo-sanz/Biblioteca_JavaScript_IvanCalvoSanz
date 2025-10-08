@@ -1,0 +1,47 @@
+<!-- ***** DOM textarea ***** -->
+
+
+<!-- ***** EJEMPLO ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM textarea</title>
+</head>
+
+<body>
+  <textarea id="mensaje" rows="4" cols="40"></textarea>
+  <br>
+  <button onclick="leerTexto()">Leer texto</button>
+</body>
+
+<script>
+  function leerTexto() {
+    const texto = document.getElementById("mensaje").value;
+    alert("Has escrito:\n" + texto);
+  }
+</script>
+
+<!-- ***** ESCRIBIR O BORRAR TEXTO ***** -->
+<script>
+  document.getElementById("mensaje").value = "Texto nuevo";   // escribe
+  document.getElementById("mensaje").value = "";              // borra
+</script>
+
+
+<!-- ***** DETECTAR CAMBIOS EN EL textarea EN TIEMPO REAL ***** -->
+<textarea id="comentario" rows="4" cols="40" placeholder="Escribe algo..."></textarea>
+<p id="contador">0 caracteres</p>
+
+<script>
+  const area = document.getElementById("comentario");
+  const contador = document.getElementById("contador");
+
+  area.addEventListener("input", () => {
+    contador.textContent = area.value.length + " caracteres";
+  });
+</script>
+
+</html>

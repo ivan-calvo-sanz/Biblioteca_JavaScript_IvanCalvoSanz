@@ -1,0 +1,41 @@
+<!-- ***** EVENTO onfocus onblur ***** 
+En lugar de escribir onfocus o onblur en el HTML se puede hacer con JavaScript moderno: -->
+
+
+<!-- ***** EJEMPLO ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENTO onfocus</title>
+</head>
+
+<body>
+  <input type="text" id="nombre">
+  <input type="text" id="apellido">
+</body>
+
+<script>
+  const nombre = document.getElementById("nombre");
+  const apellido = document.getElementById("apellido");
+
+  nombre.addEventListener("focus", () => {
+    nombre.style.borderColor = "blue";
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

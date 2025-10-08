@@ -1,0 +1,45 @@
+<!-- ***** DOM radio_buttons ***** -->
+
+<!-- 
+    Un radio button (botón de opción) permite elegir solo una opción dentro de un grupo.
+    Todos los botones que comparten el mismo atributo name pertenecen al mismo grupo.
+-->
+
+
+<!-- ***** EJEMPLO <select> ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM radio_buttons</title>
+</head>
+
+<body>
+  <form>
+    <input type="radio" id="radio1" name="horario"> Mañana<br>
+    <input type="radio" id="radio2" name="horario"> Tarde<br>
+    <input type="radio" id="radio3" name="horario"> Noche<br>
+    <input type="button" value="Confirmar" onclick='seleccion()'>
+  </form>
+</body>
+
+<script>
+  function seleccion() {
+    if (document.getElementById("radio1").checked) {
+      console.log('Horario de Mañana');
+    }
+    if (document.getElementById("radio2").checked) {
+      console.log('Horario de Tarde');
+    }
+    if (document.getElementById("radio3").checked) {
+      console.log('Horario de Noche');
+    }
+  }
+</script>
+
+
+
+
+</html>

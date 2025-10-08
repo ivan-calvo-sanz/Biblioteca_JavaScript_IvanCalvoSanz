@@ -1,0 +1,44 @@
+<!-- ***** EVENTO onfocus ***** 
+se ejecuta cuando el elemento obtiene el foco -->
+
+<!-- ***** EVENTO onblur ***** 
+evento contrario a onfocus se ejecuta cuando el elemento pierde el foco -->
+
+
+
+<!-- ***** EJEMPLO ***** -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENTO onfocus</title>
+</head>
+
+<body>
+  <input type="text" id="nombre" onfocus="resaltar(this)" onblur="quitarResaltado(this)">
+  <input type="text" id="apellido" onfocus="resaltar(this)" onblur="quitarResaltado(this)">
+</body>
+
+<script>
+  function resaltar(campo) {
+    campo.style.backgroundColor = "lightyellow";
+  }
+  function quitarResaltado(campo) {
+    campo.style.backgroundColor = "";
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -7,7 +7,7 @@
 
 // ***** TIPOS DE VARIABLES *****
 /* var
-    - Es variable Global, ámbito de función (no respeta los bloques {}) 
+    - Es variable GLOBAL, ÁMBITO DE GLOBAL (no respeta los bloques {}) 
     - Se puede redefinir y reasignar
 */
 var nombre = "Iván";
@@ -15,7 +15,7 @@ var nombre = "Pedro"; // permitido
 nombre = "Ana";       // permitido
 
 /* let
-    - Es variable Local, ámbito de bloque (solo existe dentro de {}).
+    - Es variable LOCAL, ÁMBITO DE BLOQUE (solo existe dentro de {}).
     - Se puede reasignar, pero no redeclarar en el mismo bloque.
 */
 let edad = 25;

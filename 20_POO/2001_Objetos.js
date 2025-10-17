@@ -43,6 +43,8 @@ persona_V2.saludar(); // Hola, soy Iván
 
 /**** RECORRER UN OBJETO   for...in ****/
 for (let clave in persona_V2) {
-  console.log(clave + ": " + persona_V2[clave]);
+  if (typeof persona_V2[clave] != "function") {
+    console.log(clave + ": " + persona_V2[clave]);
+  }
 }
 

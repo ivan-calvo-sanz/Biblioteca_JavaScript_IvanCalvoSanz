@@ -11,12 +11,12 @@ document.writeln('Nombre: ' + nombre + '<br>');
 document.writeln('Edad: ' + edad);
 
 // para pedir a usuario un valor entero hay que hacer un parse sino sería un String
-let a=parseInt(pompt('Ingrese el valor de a'));
+let a=parseInt(prompt('Ingrese el valor de a'));
 
 
 // ***** alert *****
 let nombre_v2 = prompt("¿Cómo te llamas?", "Tienes que indicar un nombre verdadero");
-alert("Hola " + nombre + "!");
+alert("Hola " + nombre_v2 + "!");
 
 
 

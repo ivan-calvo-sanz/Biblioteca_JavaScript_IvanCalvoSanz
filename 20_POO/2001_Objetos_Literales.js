@@ -1,13 +1,14 @@
-// ***** OBJETOS *****
+// ***** OBJETOS Literales*****
 
 /*
-    - Un objeto en JavaScript es una colección de pares clave–valor.
+    - Se crean directamente con llaves {} y No tienen una clase previa.
+    - Son simplemente una colección de pares clave–valor.
     - Cada clave (propiedad) tiene un valor, que puede ser un número, texto, función, otro objeto, etc.
     - Las propiedades pueden accederse con punto (obj.propiedad) o con corchetes (obj["propiedad"]).
 */
 
 /**** EJEMPLO ****/
-let persona = {
+const persona = {
   nombre: "Iván",
   edad: 30,
   ciudad: "Valladolid"
@@ -21,8 +22,7 @@ console.log(persona["edad"]); // 30
 persona.profesion = "Ingeniero"; // añadir nueva
 persona.edad = 31;               // modificar
 
-console.log(persona);   // { nombre: 'Iván', edad: 31, ciudad: 'Valladolid', profesion: 'Ingeniero' }
-
+console.log(persona);         // { nombre: 'Iván', edad: 31, ciudad: 'Valladolid', profesion: 'Ingeniero' }
 
 /**** ELIMINAR PROPIEDADES ****/
 delete persona.ciudad;
@@ -30,7 +30,7 @@ console.log(persona);   // { nombre: 'Iván', edad: 31, profesion: 'Ingeniero' }
 
 
 /**** METODOS ****/
-let persona_V2 = {
+const persona_V2 = {
   nombre: "Iván",
   edad: 30,
   saludar() {
@@ -48,3 +48,13 @@ for (let clave in persona_V2) {
   }
 }
 
+
+/**** TAMBIEN PODEMOS ALMACENAR OBJETOS DENTRO DE OBJETOS ****/
+const jon = {
+  nombre: "Jon",
+  apellido: "Mircha",
+  contacto: {
+    email: "jonMircha@gmail.com",
+    twitter: "@jommircha"
+  }
+}

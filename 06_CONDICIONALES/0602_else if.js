@@ -1,9 +1,10 @@
 // ***** CONDICIONALES else if*****
-if (condición) {
-  // Se ejecuta si la condición es verdadera
-} else if (otraCondición) {
-  // Se ejecuta si la anterior es falsa pero esta verdadera
+let edad = -100;
+if (edad > 17) {
+  console.log("Eres mayor de Edad");
+} else if (edad > 0 && edad <= 17) {
+  console.log("Eres menor de Edad");
 } else {
-  // Se ejecuta si ninguna es verdadera
+  console.log("Error al introducir la edad");
 }
 

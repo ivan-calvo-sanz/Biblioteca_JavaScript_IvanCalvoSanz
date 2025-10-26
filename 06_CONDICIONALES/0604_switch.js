@@ -1,5 +1,10 @@
 // ***** CONDICIONALES switch *****
-// Se usa cuando hay muchas condiciones posibles sobre un mismo valor.
+
+/*
+  - Se usa cuando hay muchas condiciones posibles sobre un mismo valor
+  - Si el valor de la lave no coincide con ningún case entonces entra en el default
+*/
+
 let dia = "martes";
 
 switch (dia) {
